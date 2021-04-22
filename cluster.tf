@@ -58,6 +58,7 @@ resource "aws_launch_configuration" "cluster" {
 
   root_block_device {
     volume_size = var.cluster_instance_root_block_device_size
+    encrypted = true
   }
 
   ebs_block_device {
